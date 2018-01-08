@@ -4,7 +4,7 @@ package edu.montana.gsoc.msusel.msusel_security_quamocohelloworld;
  * Hello world!
  *
  */
-public class App 
+public class QuamocoRunner 
 {
     public static void main( String[] args )
     {
