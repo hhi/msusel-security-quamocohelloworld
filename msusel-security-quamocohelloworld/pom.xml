@@ -25,7 +25,7 @@
 		<version>1.1.1</version>
 	</parent>
 
-	<groupId>edu.montana.gsoc.msusel.sonar</groupId>
+	<groupId>edu.montana.gsoc.msusel.msusel_security_quamocohelloworld</groupId>
 	<artifactId>msusel-security-quamocohelloworld</artifactId>
 	<packaging>sonar-plugin</packaging>
 
@@ -117,8 +117,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<pluginKey>msuselquamoco</pluginKey>
-					<pluginClass>edu.montana.gsoc.msusel.sonar.quamoco.QuamocoPlugin</pluginClass>
-					<pluginName>MSUSEL Quamoco Plugin</pluginName>
+					<pluginClass>edu.montana.gsoc.msusel.msusel_security_quamocohelloworld.QuamocoRunner</pluginClass>
+					<pluginName>MSUSEL Quamoco Security Plugin</pluginName>
 					<pluginDescription>Collects quality information about projects.</pluginDescription>
 				</configuration>
 			</plugin>
