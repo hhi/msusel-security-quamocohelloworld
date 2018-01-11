@@ -41,6 +41,7 @@ import com.google.common.collect.Maps;
  * QuamocoMetric -
  *
  * @author Isaac Griffith
+ * @author David Rice
  */
 public class QSMetrics implements Metrics {
 

@@ -29,7 +29,7 @@ public class IntegrationTests {
 	public void modifiedDistillerTest() {
 		ModifiedDistiller md = new ModifiedDistiller();
 		
-		md.buildGraph("root", "object", "helloworld");
+		md.buildGraph();
 		
 		DirectedSparseGraph<Node, Edge> graph = md.getGraph();
 		System.out.println("Graph: ");

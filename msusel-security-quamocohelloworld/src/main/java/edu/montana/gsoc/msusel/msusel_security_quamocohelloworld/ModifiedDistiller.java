@@ -30,8 +30,8 @@ public class ModifiedDistiller {
      *
      * @param filenames an array of strings which are the names of the model files to be used to construct the processing graph. This list should be organized such that the most abstract model (i.e., root) is the first item in the array.
      */
-    public void buildGraph(String... filenames) {
-        models = readInQualityModels(filenames);
+    public void buildGraph() {
+        models = readInQualityModels("root", "object", "helloworld");
         DistilledGraphCreator creator = new DistilledGraphCreator();
         graph = creator.buildGraph(models);
     }
@@ -84,7 +84,7 @@ public class ModifiedDistiller {
     public static void main(String args[]) {
         ModifiedDistiller md = new ModifiedDistiller();
 
-        md.buildGraph("root", "object", "helloworld");
+        md.buildGraph();
 
         DirectedSparseGraph<Node, Edge> graph = md.getGraph();
         System.out.println("Graph: ");

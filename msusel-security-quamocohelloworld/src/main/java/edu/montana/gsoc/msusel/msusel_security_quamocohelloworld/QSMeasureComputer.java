@@ -74,6 +74,7 @@ import edu.uci.ics.jung.graph.DirectedSparseGraph;
  * their results via the SonarQube Compute Engine.
  * 
  * @author Isaac Griffith
+ * @author David Rice
  * @version 1.1.1
  */
 public class QSMeasureComputer implements MeasureComputer {
