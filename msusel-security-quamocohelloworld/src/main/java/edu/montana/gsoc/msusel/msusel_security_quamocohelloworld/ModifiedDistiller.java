@@ -18,6 +18,7 @@ import java.util.List;
  * Class uesed to control the processing graph distillation process for Quamoco Based Model plugins
  *
  * @author Isaac Griffith
+ * @author David Rice
  */
 public class ModifiedDistiller {
 
@@ -31,7 +32,7 @@ public class ModifiedDistiller {
      * @param filenames an array of strings which are the names of the model files to be used to construct the processing graph. This list should be organized such that the most abstract model (i.e., root) is the first item in the array.
      */
     public void buildGraph() {
-        models = readInQualityModels("root", "object", "helloworld");
+        models = readInQualityModels("root", "object", "csharp");
         DistilledGraphCreator creator = new DistilledGraphCreator();
         graph = creator.buildGraph(models);
     }
