@@ -23,17 +23,22 @@ class Node(object):
             self.value = self.value / len(self.children)
 
     def print_information(self):
-        print("Factor Name: %s" % self.name)
-        print("Node value: %f" % self.value)
+        fh = open("output.txt", "a")
+        fh.writelines("Factor Name: %s\n" % self.name)
+        fh.writelines("Node value: %f\n"% self.value)
         if self.base_score:
-            print("CWSS Base Score: %f" % self.base_score)
-            print("CWSS Attack Score: %f" % self.attack_score)
-            print("CWSS Environment Score: %f" % self.env_score)
-        print("-----------------------\n")
+            fh.writelines("CWSS Base Score: %f\n" % self.base_score)
+            fh.writelines("CWSS Attack Score: %f\n" % self.attack_score)
+            fh.writelines("CWSS Environment Score: %f\n" % self.env_score)
+        fh.writelines("-----------------------\n")
+        fh.close()
 
 
 def generate_graph():
-    print("Generating graph...")
+    fh = open("output.txt", "w")
+    fh.writelines("Generating graph...\n\n")
+    fh.close()
+
     cwe114 = Node(False, "CWE-114", 0.46, 1.0, 1.0)
     cwe391 = Node(False, "CWE-391", 0.17, 1.0, 1.0)
     cwe1011 = Node(False, "CWE-1011", None, None, None)

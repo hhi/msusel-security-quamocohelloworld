@@ -1,0 +1,29 @@
+Generating graph...
+
+Factor Name: Security
+Node value: 0.387500
+-----------------------
+Factor Name: Confidentiatliy
+Node value: 0.460000
+-----------------------
+Factor Name: Integrity
+Node value: 0.315000
+-----------------------
+Factor Name: CWE-1011
+Node value: 0.460000
+-----------------------
+Factor Name: CWE-1020
+Node value: 0.170000
+-----------------------
+Factor Name: CWE-114
+Node value: 0.460000
+CWSS Base Score: 0.460000
+CWSS Attack Score: 1.000000
+CWSS Environment Score: 1.000000
+-----------------------
+Factor Name: CWE-391
+Node value: 0.170000
+CWSS Base Score: 0.170000
+CWSS Attack Score: 1.000000
+CWSS Environment Score: 1.000000
+-----------------------
