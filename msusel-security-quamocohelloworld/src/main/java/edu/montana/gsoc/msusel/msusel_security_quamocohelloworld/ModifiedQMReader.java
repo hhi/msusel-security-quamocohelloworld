@@ -44,12 +44,12 @@ public class ModifiedQMReader extends QMReader {
             catch (final IOException e)
             {
                 ModifiedQMReader.LOG.warn(e.getMessage(), e);
-                return ModifiedQMReader.class.getResourceAsStream("/edu/montana/gsoc/msusel/quamoco/models/" + qm + ".qm"); // Note that you will need to update the "/models/" section to reflect the location in the resources section of src where the models are actually stored"
+                return ModifiedQMReader.class.getResourceAsStream("/edu/models/" + qm + ".qm"); // Note that you will need to update the "/models/" section to reflect the location in the resources section of src where the models are actually stored"
             }
         }
         else
         {
-            return ModifiedQMReader.class.getResourceAsStream("/edu/montana/gsoc/msusel/quamoco/models/" + qm + ".qm"); // Note that you will need to update the "/models/" section to reflect the location in the resources section of src where the models are actually stored"
+            return ModifiedQMReader.class.getResourceAsStream("/edu/models/" + qm + ".qm"); // Note that you will need to update the "/models/" section to reflect the location in the resources section of src where the models are actually stored"
         }
     }
 }
