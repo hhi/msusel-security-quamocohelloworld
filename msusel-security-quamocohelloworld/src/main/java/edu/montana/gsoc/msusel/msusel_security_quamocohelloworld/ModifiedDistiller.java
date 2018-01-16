@@ -4,7 +4,6 @@ import com.google.common.collect.Lists;
 import edu.montana.gsoc.msusel.quamoco.distiller.DistilledGraphCreator;
 import edu.montana.gsoc.msusel.quamoco.graph.edge.Edge;
 import edu.montana.gsoc.msusel.quamoco.graph.node.Node;
-import edu.montana.gsoc.msusel.quamoco.io.QMReader;
 import edu.montana.gsoc.msusel.quamoco.model.qm.QualityModel;
 import edu.uci.ics.jung.graph.DirectedSparseGraph;
 import org.slf4j.Logger;
@@ -32,7 +31,7 @@ public class ModifiedDistiller {
      * @param filenames an array of strings which are the names of the model files to be used to construct the processing graph. This list should be organized such that the most abstract model (i.e., root) is the first item in the array.
      */
     public void buildGraph() {
-        models = readInQualityModels("root", "object", "csharp");
+        models = readInQualityModels("root", "object", "helloworld");
         DistilledGraphCreator creator = new DistilledGraphCreator();
         graph = creator.buildGraph(models);
     }
@@ -43,7 +42,7 @@ public class ModifiedDistiller {
      * @param args an array of strings which are the names of the model files to be used to construct the processing graph. This list should be organized such that the most abstract model (i.e., root) is the first item in the array.
      */
     private List<QualityModel> readInQualityModels(String... args) {
-        final QMReader qmread = new ModifiedQMReader();
+        final ModifiedQMReader qmread = new ModifiedQMReader();
         final List<QualityModel> models = Lists.newArrayList();
         if (args != null)
         {
