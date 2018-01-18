@@ -31,33 +31,50 @@ namespace TransparencyWarning
         //   2. Making Derived.TransparentInterfaceMethod transparent
         //   3. Making Derived.TransparentInterfaceMethod safe critical
         [SecurityCritical]
-        public void TransparentInterfaceMethod() { }
+        public void TransparentInterfaceMethod() 
+        { 
+            Console.WriteLine("Running TransparentInterfaceMethod...");
+        }
 
         // CA2134 violation - implementing a critical method with a transparent one.  This can be fixed by any of:
         //   1. Making IInterface.CriticalInterfaceMethod transparent
         //   2. Making IInterface.CriticalInterfaceMethod safe critical
         //   3. Making Derived.TransparentInterfaceMethod critical
-        public void CriticalInterfaceMethod() { }
+        public void CriticalInterfaceMethod()
+        { 
+            Console.WriteLine("Running CriticalInterfaceMethod...");
+        }
 
         // CA2134 violation - overriding a transparent method with a critical one.  This can be fixed by any of:
         //   1. Making Base.TrasnparentVirtual critical
         //   2. Making Derived.TransparentVirtual transparent
         //   3. Making Derived.TransparentVirtual safe critical
         [SecurityCritical]
-        public override void TransparentVirtual() { }
+        public override void TransparentVirtual()
+        { 
+            Console.WriteLine("Running TransparentVirtual...");
+        }
 
         // CA2134 violation - overriding a critical method with a transparent one.  This can be fixed by any of:
         //   1. Making Base.CriticalVirtual transparent
         //   2. Making Base.CriticalVirtual safe critical
         //   3. Making Derived.CriticalVirtual critical
-        public override void CriticalVirtual() { }
+        public override void CriticalVirtual()
+        { 
+            Console.WriteLine("Running CriticalVirtual...");
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Instantiating Derived Class...");
+            Derived derived = new Derived();
+            derived.TransparentInterfaceMethod();
+            derived.CriticalInterfaceMethod();
+            derived.TransparentVirtual();
+            derived.CriticalVirtual();
         }
     }
 }
