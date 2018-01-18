@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Security;
 
-namespace MethodsTransparency
+namespace TransparencyWarning
 {
     /// <summary>
-    /// Program designed to trigger fxcop rule "CA2134: Methods must
-    /// keep consistent transparency when overriding base methods".
-    /// 
-    /// See https://msdn.microsoft.com/en-us/library/dd997447.aspx for
-    /// more information.
+    /// Demo program to trigger FxCop CA2134: "Methods must keep consistent transparency
+    /// when overriding base methods"
+    /// See https://msdn.microsoft.com/en-us/library/dd997447.aspx for more information
     /// </summary>
     public interface IInterface
     {
@@ -55,11 +53,11 @@ namespace MethodsTransparency
         public override void CriticalVirtual() { }
     }
 
-    class TransparencyWarningsDemo
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello World!");
         }
     }
 }
