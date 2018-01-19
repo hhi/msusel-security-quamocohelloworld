@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>AllFindings</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>5b258d6f-f11e-4bb4-85f6-ccff32e13606</ProjectGuid>
+  <FullPath>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\AllFindings\AllFindings\AllFindings.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\AllFindings\.sonarqube\out\\AllFindings_2605\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\AllFindings\AllFindings\bin\Debug\AllFindings.exe.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\AllFindings\.sonarqube\out\\AllFindings_2605</Property>
+    <Property Name="sonar.stylecop.projectFilePath">C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\AllFindings\AllFindings\AllFindings.csproj</Property>
+  </AnalysisSettings>
+</ProjectInfo>

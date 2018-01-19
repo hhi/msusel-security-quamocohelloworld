@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FEED3171-B46C-486B-A865-AB5ACA6DAD16}</ProjectGuid>
+    <ProjectGuid>{5B258D6F-F11E-4BB4-85F6-CCFF32E13606}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TransparencyWarning</RootNamespace>
-    <AssemblyName>TransparencyWarning</AssemblyName>
+    <RootNamespace>AllFindings</RootNamespace>
+    <AssemblyName>AllFindings</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TransparencyWarning.cs" />
+    <Compile Include="AllFindings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

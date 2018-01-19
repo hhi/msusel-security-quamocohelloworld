@@ -1,5 +1,5 @@
-projectKey=org.sonarqube:sonarqube-scanner-msbuild
+projectKey=NoFindings
 serverUrl=http://localhost:9000
-dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:sonarqube-scanner-msbuild
-ceTaskId=AWEO6_0TznKfEW0QIZlj
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWEO6_0TznKfEW0QIZlj
+dashboardUrl=http://localhost:9000/dashboard/index/NoFindings
+ceTaskId=AWEO-359znKfEW0QIZlm
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWEO-359znKfEW0QIZlm

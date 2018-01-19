@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf</SonarConfigDir>
-  <SonarOutputDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\out</SonarOutputDir>
-  <SonarBinDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings</SonarScannerWorkingDirectory>
+  <SonarConfigDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning</SonarScannerWorkingDirectory>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
-  <SonarProjectKey>NoFindings</SonarProjectKey>
+  <SonarProjectKey>org.sonarqube:sonarqube-scanner-msbuild</SonarProjectKey>
   <SonarProjectVersion>1.0</SonarProjectVersion>
-  <SonarProjectName>NoFindings</SonarProjectName>
+  <SonarProjectName>TransparencyWarning</SonarProjectName>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -71,14 +71,14 @@
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RuleSetFilePath>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
+      <RuleSetFilePath>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
       <AnalyzerAssemblyPaths>
         <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
         <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CSharp.dll</Path>
         <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
       </AnalyzerAssemblyPaths>
       <AdditionalFilePaths>
-        <Path>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf\cs\SonarLint.xml</Path>
+        <Path>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\conf\cs\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

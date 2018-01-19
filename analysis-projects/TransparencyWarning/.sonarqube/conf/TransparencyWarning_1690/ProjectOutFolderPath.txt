@@ -1,0 +1,1 @@
+C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\TransparencyWarning\.sonarqube\out\\TransparencyWarning_1690

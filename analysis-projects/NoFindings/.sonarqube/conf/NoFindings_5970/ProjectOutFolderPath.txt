@@ -1,1 +1,0 @@
-C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\out\\NoFindings_5970
