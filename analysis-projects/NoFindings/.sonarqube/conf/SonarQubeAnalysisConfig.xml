@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <SonarConfigDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings</SonarScannerWorkingDirectory>
+  <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
+  <SonarProjectKey>org.sonarqube:sonarqube-scanner-msbuild</SonarProjectKey>
+  <SonarProjectVersion>1.0</SonarProjectVersion>
+  <SonarProjectName>NoFindings</SonarProjectName>
+  <AdditionalConfig>
+    <ConfigSetting Id="BuildUri" />
+    <ConfigSetting Id="TfsUri" />
+    <ConfigSetting Id="settings.file.path" Value="C:\sonarqube-5.6.7\sonar-scanner-msbuild-2.3.1.554\SonarQube.Analysis.xml" />
+  </AdditionalConfig>
+  <ServerSettings>
+    <Property Name="sonar.qualitygate">1</Property>
+    <Property Name="sonar.permission.template.default">default_template</Property>
+    <Property Name="sonar.core.id">20180118153326</Property>
+    <Property Name="sonar.core.version">5.6.7</Property>
+    <Property Name="sonar.core.startTime">1/18/2018 3:33:26 PM</Property>
+    <Property Name="sonaranalyzer-cs.nuget.packageVersion">6.6.0.3969</Property>
+    <Property Name="sonar.authenticator.ignoreStartupFailure">false</Property>
+    <Property Name="sonar.cs.ignoreHeaderComments">true</Property>
+    <Property Name="sonar.dbcleaner.daysBeforeDeletingClosedIssues">30</Property>
+    <Property Name="sonar.jacoco.itReportPath">target/jacoco-it.exec</Property>
+    <Property Name="sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByMonth">52</Property>
+    <Property Name="sonar.lf.gravatarServerUrl">https://secure.gravatar.com/avatar/{EMAIL_MD5}.jpg?s={SIZE}&amp;d=identicon</Property>
+    <Property Name="sonar.violationLocale">en</Property>
+    <Property Name="sonar.ce.maxLogsPerTask">10</Property>
+    <Property Name="sonar.forceAuthentication">false</Property>
+    <Property Name="sonar.jacoco.reportPath">target/jacoco.exec</Property>
+    <Property Name="sonar.analysis.mode">analysis</Property>
+    <Property Name="sonar.notifications.delay">60</Property>
+    <Property Name="sonar.allowUsersToSignUp">false</Property>
+    <Property Name="sonaranalyzer-cs.staticResourceName">SonarAnalyzer-6.6.0.3969.zip</Property>
+    <Property Name="sonar.notifications.runningDelayBeforeReportingStatus">600</Property>
+    <Property Name="sonar.authenticator.createUsers">true</Property>
+    <Property Name="sonar.defaultGroup">sonar-users</Property>
+    <Property Name="sonaranalyzer-cs.nuget.packageId">SonarAnalyzer.CSharp</Property>
+    <Property Name="sonaranalyzer-cs.ruleNamespace">SonarAnalyzer.CSharp</Property>
+    <Property Name="sonar.authenticator.downcase">false</Property>
+    <Property Name="sonar.scm.disabled">false</Property>
+    <Property Name="sonar.import_unknown_files">false</Property>
+    <Property Name="sonar.updatecenter.activate">true</Property>
+    <Property Name="sonar.dbcleaner.hoursBeforeKeepingOnlyOneSnapshotByDay">24</Property>
+    <Property Name="sonaranalyzer-cs.analyzerId">SonarAnalyzer.CSharp</Property>
+    <Property Name="sonar.technicalDebt.hoursInDay">8</Property>
+    <Property Name="sonar.dbcleaner.cleanDirectory">true</Property>
+    <Property Name="sonar.technicalDebt.ratingGrid">0.05,0.1,0.2,0.5</Property>
+    <Property Name="sonar.cpd.cross_project">false</Property>
+    <Property Name="sonar.technicalDebt.developmentCost">30</Property>
+    <Property Name="sonar.lf.enableGravatar">true</Property>
+    <Property Name="sonar.preview.excludePlugins">buildstability,devcockpit,pdfreport,report,views,jira,buildbreaker,scmstats</Property>
+    <Property Name="sonaranalyzer-cs.pluginVersion">6.6.0.3969</Property>
+    <Property Name="sonar.cs.file.suffixes">.cs</Property>
+    <Property Name="sonar.security.localUsers">admin</Property>
+    <Property Name="sonar.enableFileVariation">false</Property>
+    <Property Name="sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek">4</Property>
+    <Property Name="sonar.java.file.suffixes">.java,.jav</Property>
+    <Property Name="sonar.timemachine.period1">previous_version</Property>
+    <Property Name="sonar.timemachine.period2">previous_analysis</Property>
+    <Property Name="sonar.timemachine.period3">30</Property>
+    <Property Name="sonaranalyzer-cs.pluginKey">csharp</Property>
+    <Property Name="sonar.dbcleaner.weeksBeforeDeletingAllSnapshots">260</Property>
+    <Property Name="sonar.jacoco.reportMissing.force.zero">false</Property>
+    <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
+    <Property Name="sonar.msbuild.testProjectPattern">[^\\]*test[^\\]*$</Property>
+  </ServerSettings>
+  <LocalSettings />
+  <AnalyzersSettings>
+    <AnalyzerSettings>
+      <Language>cs</Language>
+      <RuleSetFilePath>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
+      <AnalyzerAssemblyPaths>
+        <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
+        <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CSharp.dll</Path>
+        <Path>C:\Users\c46q812\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
+      </AnalyzerAssemblyPaths>
+      <AdditionalFilePaths>
+        <Path>C:\Users\c46q812\Documents\LocalRepository\MSUSEL\msusel-security-quamocohelloworld\analysis-projects\NoFindings\.sonarqube\conf\cs\SonarLint.xml</Path>
+      </AdditionalFilePaths>
+    </AnalyzerSettings>
+  </AnalyzersSettings>
+</AnalysisConfig>
