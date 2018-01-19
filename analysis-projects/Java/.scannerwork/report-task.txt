@@ -1,0 +1,5 @@
+projectKey=java-allfindings:1.1.2
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/java-allfindings:1.1.2
+ceTaskId=AWEPrB1uiJtm_-fx3rK3
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWEPrB1uiJtm_-fx3rK3

@@ -31,7 +31,7 @@ public class ModifiedDistiller {
      * @param filenames an array of strings which are the names of the model files to be used to construct the processing graph. This list should be organized such that the most abstract model (i.e., root) is the first item in the array.
      */
     public void buildGraph() {
-        models = readInQualityModels("root", "object", "helloworld");
+        models = readInQualityModels("root", "object", "java");
         DistilledGraphCreator creator = new DistilledGraphCreator();
         graph = creator.buildGraph(models);
     }
