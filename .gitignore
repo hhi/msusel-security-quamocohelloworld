@@ -408,7 +408,9 @@ ASALocalRun/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
+*.code
+*.code-workspace
+*.iml
 
 /target/
 /Sonar_Quamoco_Plugin.udb

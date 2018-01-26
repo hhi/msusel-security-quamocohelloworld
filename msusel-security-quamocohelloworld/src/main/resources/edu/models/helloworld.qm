@@ -129,37 +129,37 @@
     <rankings xmi:id="_N-1LoPI7EeeEz_ZYwymmuw" rank="1" weight="1.0" factor="_ikwjQPI6EeeEz_ZYwymmuw"/>
   </evaluations>
   <evaluations xsi:type="qm:WeightedSumMultiMeasureEvaluation" xmi:id="_l6qvIPI6EeeEz_ZYwymmuw" name="WeightedSumMultiMeasureEvaluation" evaluates="_ikwjQPI6EeeEz_ZYwymmuw">
-    <rankings xmi:id="_4dL5MPJoEee_vNpVqjnzhQ" measure="_nyiPsPI6EeeEz_ZYwymmuw" range="NA" rank="1" weight="0.5">
+    <rankings xmi:id="_FBDawALCEeiGDKaTMhJTew" measure="_wV7PgALBEeiGDKaTMhJTew" range="NA" rank="1" weight="0.5">
       <normlizationMeasure href="root.qm#_6wmhsOHIEd-_QLJMFBuPpg"/>
-      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_4dL5MfJoEee_vNpVqjnzhQ" upperBound="1.0"/>
+      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_FBDawQLCEeiGDKaTMhJTew" upperBound="1.0"/>
     </rankings>
-    <rankings xmi:id="_4dL5MvJoEee_vNpVqjnzhQ" measure="_k9e_QPJoEee_vNpVqjnzhQ" range="NA" rank="1" weight="0.5">
+    <rankings xmi:id="_FBDawgLCEeiGDKaTMhJTew" measure="_-nWjMALAEeiGDKaTMhJTew" range="NA" rank="1" weight="0.5">
       <normlizationMeasure href="root.qm#_6wmhsOHIEd-_QLJMFBuPpg"/>
-      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_4dL5M_JoEee_vNpVqjnzhQ" upperBound="1.0"/>
+      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_FBDawwLCEeiGDKaTMhJTew" upperBound="1.0"/>
     </rankings>
   </evaluations>
   <evaluations xsi:type="qm:WeightedSumFactorAggregation" xmi:id="_qnEXYPI7EeeEz_ZYwymmuw" name="WeightedSumFactorAggregation" evaluates="_m30qAPIxEeeEz_ZYwymmuw">
     <rankings xmi:id="_rPKSIPI7EeeEz_ZYwymmuw" rank="1" weight="1.0" factor="_0W4WgPI5EeeEz_ZYwymmuw"/>
   </evaluations>
   <evaluations xsi:type="qm:WeightedSumMultiMeasureEvaluation" xmi:id="_VpiGUPJjEee_vNpVqjnzhQ" name="WeightedSumMultiMeasureEvaluation" evaluates="_0W4WgPI5EeeEz_ZYwymmuw">
-    <rankings xmi:id="_YIZ8gPJjEee_vNpVqjnzhQ" measure="_6f_p0PI5EeeEz_ZYwymmuw" range="NA" rank="1" weight="1.0">
+    <rankings xmi:id="_6dOhkAK_EeiGDKaTMhJTew" measure="_6f_p0PI5EeeEz_ZYwymmuw" range="NA" rank="1" weight="1.0">
       <normlizationMeasure href="root.qm#_6wmhsOHIEd-_QLJMFBuPpg"/>
-      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_YIZ8gfJjEee_vNpVqjnzhQ" upperBound="1.0"/>
+      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_6dOhkQK_EeiGDKaTMhJTew" upperBound="1.0"/>
     </rankings>
   </evaluations>
-  <measures xmi:id="_6f_p0PI5EeeEz_ZYwymmuw" description="Description for APTCA measure." name="APTCA Methods not Calling APTCA Methods" type="FINDINGS">
+  <measures xmi:id="_6f_p0PI5EeeEz_ZYwymmuw" description="Description for Control Flow Statements Nested" name="Control Flow Statements Too Deeply Nested" type="FINDINGS">
     <measures xmi:id="_6gCtIPI5EeeEz_ZYwymmuw" parent="_0W4WgPI5EeeEz_ZYwymmuw"/>
   </measures>
-  <measures xmi:id="_nyiPsPI6EeeEz_ZYwymmuw" description="Description for method override measure" name="Method Override Without Consistent Transparency" type="FINDINGS">
-    <measures xmi:id="_nykr8PI6EeeEz_ZYwymmuw" parent="_ikwjQPI6EeeEz_ZYwymmuw"/>
+  <measures xmi:id="_-nWjMALAEeiGDKaTMhJTew" description="Description for Too Complex Expressions" name="Expressions Are Too Complex" type="FINDINGS">
+    <measures xmi:id="_-nlMsALAEeiGDKaTMhJTew" parent="_ikwjQPI6EeeEz_ZYwymmuw"/>
   </measures>
-  <measures xmi:id="_k9e_QPJoEee_vNpVqjnzhQ" description="Description for suppress unmanaged code measure." name="Suppress Unmanaged Code Security" type="FINDINGS">
-    <measures xmi:id="_k9lF4PJoEee_vNpVqjnzhQ" parent="_ikwjQPI6EeeEz_ZYwymmuw"/>
+  <measures xmi:id="_wV7PgALBEeiGDKaTMhJTew" description="Description for Exception Constructor" name="Exception Constructor Throwing Exception" type="FINDINGS">
+    <measures xmi:id="_wWDyYALBEeiGDKaTMhJTew" parent="_ikwjQPI6EeeEz_ZYwymmuw"/>
   </measures>
-  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_90uxAPI5EeeEz_ZYwymmuw" determines="_6f_p0PI5EeeEz_ZYwymmuw" tool="_i3kGgPJmEee_vNpVqjnzhQ" metric="fxcop:AptcaMethodsShouldOnlyCallAptcaMethods"/>
-  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_1pVncPI6EeeEz_ZYwymmuw" determines="_nyiPsPI6EeeEz_ZYwymmuw" tool="_i3kGgPJmEee_vNpVqjnzhQ" metric="fxcop:MethodsMustOverrideWithConsistentTransparency"/>
-  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_veanYPJoEee_vNpVqjnzhQ" determines="_k9e_QPJoEee_vNpVqjnzhQ" tool="_i3kGgPJmEee_vNpVqjnzhQ" metric="fxcop:ReviewSuppressUnmanagedCodeSecurityUsage"/>
-  <tools xmi:id="_i3kGgPJmEee_vNpVqjnzhQ" description="Description for fxcop&#x9;" name="fxcop"/>
+  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_fPZB0ALAEeiGDKaTMhJTew" determines="_6f_p0PI5EeeEz_ZYwymmuw" tool="_LinKoAK_EeiGDKaTMhJTew" metric="csharpsquid:S134"/>
+  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_KNYyMALBEeiGDKaTMhJTew" determines="_-nWjMALAEeiGDKaTMhJTew" tool="_LinKoAK_EeiGDKaTMhJTew" metric="csharpsquid:S1067"/>
+  <measurementMethods xsi:type="qm:ToolBasedInstrument" xmi:id="_5sk10ALBEeiGDKaTMhJTew" determines="_wV7PgALBEeiGDKaTMhJTew" tool="_LinKoAK_EeiGDKaTMhJTew" metric="csharpsquid:S3693"/>
+  <tools xmi:id="_LinKoAK_EeiGDKaTMhJTew" description="Description for csharpsquid&#x9;" name="csharpsquid"/>
   <requires href="object.qm#_vVIPYKUsEd-NpKpUUyVKCQ"/>
   <requires href="root.qm#_JarMoOHNEd-I9oS2OyT8ug"/>
 </qm:QualityModel>

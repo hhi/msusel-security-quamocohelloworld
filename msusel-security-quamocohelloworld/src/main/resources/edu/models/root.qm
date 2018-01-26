@@ -894,7 +894,7 @@
   <factors xmi:id="_9nO6sYXWEeCT8pJoQsn4HQ" description="A catch parameter's type is general, if it's parameter types are as abstract as possible and as specialized as necessary, regarding the inheritance hierarchy. The most general type for a catch statement should be a child from the common exception base class and not the common base class itself." name="Type Generality" characterizes="_9KCBUIXWEeCT8pJoQsn4HQ">
     <influences xmi:id="_93ngFIXWEeCT8pJoQsn4HQ" target="_hCU1x-P0Ed6mXujsf-O9qQ" justification="Analyzability is negatively influenced, because too general catch statements hide the actual exceptions. Additionally the exception hierarchy has to be known. " effect="NEGATIVE"/>
     <influences xmi:id="_93ngFYXWEeCT8pJoQsn4HQ" target="_hCU1k-P0Ed6mXujsf-O9qQ" justification="Functional correctness is negatively influenced, because too general catch statements render the exception handling absurd as the code cannot handle different types of exceptions accordingly. " effect="NEGATIVE"/>
-    <influences xmi:id="_kseYENc5EeWkEaWyFZ64hw" target="_hCU1teP0Ed6mXujsf-O9qQ" effect="NEGATIVE"/>
+    <influences xmi:id="_kseYENc5EeWkEaWyFZ64hw" target="_hCU1teP0Ed6mXujsf-O9qQ"/>
     <refines xmi:id="_B6kUAIeLEeCvOcxPw9PG9g" parent="_-OY9MIeKEeCvOcxPw9PG9g"/>
   </factors>
   <factors xmi:id="_-OY9MIeKEeCvOcxPw9PG9g" description="An entity's type is general, if it is as wide as possible and as narrow as necessary." name="Type Generality" characterizes="_GJuXcJjKEd-vUPy_oGILFw">
@@ -1234,11 +1234,11 @@
     </rankings>
   </evaluations>
   <evaluations xsi:type="qm:WeightedSumMultiMeasureEvaluation" xmi:id="_QfFycKZNEeCcKtFwB9mkgA" name="WeightedSumMultiMeasureEvaluation" evaluates="_9xzzAIXWEeCT8pJoQsn4HQ">
-    <rankings xmi:id="_0qy4oO7NEea_H-Ocxe7A4w" measure="_zvmFELpgEd-vsOyJ3PcLww" range="NA" rank="1" weight="0.5">
-      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_0qy4oe7NEea_H-Ocxe7A4w" upperBound="1.0"/>
+    <rankings xmi:id="_PTynsc2DEeC4a4M7GhLkcQ" measure="_zvmFELpgEd-vsOyJ3PcLww" range="NA" rank="1" weight="0.5">
+      <function xsi:type="qm:LinearDecreasingFunction" xmi:id="_PTynss2DEeC4a4M7GhLkcQ" upperBound="1.0"/>
     </rankings>
-    <rankings xmi:id="_0qy4ou7NEea_H-Ocxe7A4w" measure="_xNy_wJuUEd6lZqfHOw9WKg" range="NA" rank="1" weight="0.5">
-      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_0qy4o-7NEea_H-Ocxe7A4w" upperBound="1.0"/>
+    <rankings xmi:id="_PTyns82DEeC4a4M7GhLkcQ" measure="_xNy_wJuUEd6lZqfHOw9WKg" range="NA" rank="1" weight="0.5">
+      <function xsi:type="qm:LinearIncreasingFunction" xmi:id="_PTyntM2DEeC4a4M7GhLkcQ" upperBound="1.0"/>
     </rankings>
   </evaluations>
   <evaluations xsi:type="qm:WeightedSumFactorAggregation" xmi:id="_2BaFUKeiEeCeT84Z3j_9QA" description="Many other impacts are missing, e.g. call-by-value instead call-by-reference, copying large data, livelocks; Our evaluation criteria where rank 1 for issues that will most probably lead to poor time behavior and rank 2 for issues that might lead to some degraded time behavior. Thereby, we degraded the rank for very special issues that are unlikely to occur." name="WeightedSumFactorAggregation" evaluates="_hCU1oeP0Ed6mXujsf-O9qQ" completeness="25">
@@ -1684,7 +1684,7 @@
   <measures xmi:id="_y7tE8LtbEd-4Dvfk12g7Xw" description="Proportion percentage of identifiers that are synonyms" name="Proportion of identifiers that are synonyms" type="NUMBER">
     <measures xmi:id="_9JbkZoXWEeCT8pJoQsn4HQ" parent="_9Ir9g4XWEeCT8pJoQsn4HQ"/>
   </measures>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_6wmhsOHIEd-_QLJMFBuPpg" description="Lines of Code of all programming languages in a system." name="LOC" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_6wmhsOHIEd-_QLJMFBuPpg" description="Lines of Code of all programming languages in a system." name="LOC" type="NUMBER"/>
   <measures xmi:id="_wj30YOM7Ed-vob4nmRiskA" originatesFrom="_uliZAQQNEeGSsdo78OGnBA" description="&quot;Comparing floating points values isn't easy, because simple values, such as 0.2, cannot be precisely represented. This rule ensures the code doesn't contains floating point [in]equality comparison for Single and Double values. For more information: &#xD;&#xA;&#xD;&#xA;Floating Point Comparison (General Problem) (http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm) &#xD;&#xA;Another article about floating point comparison (more .NET adapted) (http://www.yoda.arachsys.com/csharp/floatingpoint.html) &#xD;&#xA;&quot; [2]" name="Floating point equality" title="" type="FINDINGS">
     <annotations xmi:id="_oQQNM6ucEeCjgf2sYoj_Lg" key="Trustworthiness" value="Simple pattern to check."/>
     <annotations xmi:id="_oQQNNKucEeCjgf2sYoj_Lg" key="Effort" value="Just change the line from equality to comparision."/>

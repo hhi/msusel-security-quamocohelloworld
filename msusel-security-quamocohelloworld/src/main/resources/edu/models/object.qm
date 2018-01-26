@@ -55,6 +55,7 @@
     <isA xmi:id="_fXjGQAkiEeCOqaO8I6kIkw">
       <parent href="root.qm#_GJuXcJjKEd-vUPy_oGILFw"/>
     </isA>
+    <partOf xmi:id="_xW0kQ54vEd-Ot6QNrtZtmg" parent="_ptr5EJNBEd-PbauLYkgVgA"/>
   </entities>
   <entities xmi:id="_UiFsUJsIEd-BEeIfUepsAQ" description="&quot;In object-oriented programming, a constructor (sometimes shortened to ctor) in a class is a special type of subroutine called at the creation of an object. It prepares the new object for use, often accepting parameters which the constructor uses to set any member variables required when the object is first created.&#xA;A constructor resembles an instance method, but it differs from a method in that it never has an explicit return-type, it is not inherited (though many languages provide access to the superclass's constructor, for example through the super keyword in Java), and it usually has different rules for scope modifiers. Constructors are often distinguished by having the same name as the declaring class. They have the task of initializing the object's data members and of establishing the invariant of the class, failing if the invariant isn't valid. A properly written constructor will leave the object in a valid state. Immutable objects must be initialized in a constructor.&#xA;&quot; [1]" name="Constructor">
     <originatesFrom href="root.qm#_GATYoeKrEd-KpYBi5GbJBw"/>
@@ -81,6 +82,7 @@
     <isA xmi:id="_oSwrIFU8EeCD5J7zIBfdhQ">
       <parent href="root.qm#_n3OgULtaEd-4Dvfk12g7Xw"/>
     </isA>
+    <partOf xmi:id="_lPFewFU8EeCD5J7zIBfdhQ" parent="_Ve0-kJP7Ed-a_JX6fZrQQA"/>
   </entities>
   <entities xmi:id="_9UdIoYXWEeCT8pJoQsn4HQ" description="A special method that outputs a string representation of an object." name="ToString Method">
     <isA xmi:id="_v_3w0JDREeCBHt0LVePNEA" parent="_zDY80LpUEd-vsOyJ3PcLww"/>
@@ -248,7 +250,7 @@
     <influences xmi:id="_90MYpYXWEeCT8pJoQsn4HQ" justification="Modifiability is negatively influenced because a large number of dependencies between class members hamper modification of the class." effect="NEGATIVE">
       <target href="root.qm#_hCU1yeP0Ed6mXujsf-O9qQ"/>
     </influences>
-    <influences xmi:id="_qgXrgNdIEeWkEaWyFZ64hw" effect="NEGATIVE">
+    <influences xmi:id="_qgXrgNdIEeWkEaWyFZ64hw">
       <target href="root.qm#_hCU1luP0Ed6mXujsf-O9qQ"/>
     </influences>
     <refines xmi:id="_1z918IeHEeCvOcxPw9PG9g">
@@ -699,7 +701,7 @@
     <influences xmi:id="_93ngEIXWEeCT8pJoQsn4HQ" justification="Reusabiltiy is positively influenced, because a more general method can be used in more situations.">
       <target href="root.qm#_hCU1xeP0Ed6mXujsf-O9qQ"/>
     </influences>
-    <influences xmi:id="_93ngEYXWEeCT8pJoQsn4HQ" justification="Analyzability is negatively influenced, because for very general types, more cases must be regarded, which makes the code harder to understand." effect="POSITIVE">
+    <influences xmi:id="_93ngEYXWEeCT8pJoQsn4HQ" justification="Analyzability is negatively influenced, because for very general types, more cases must be regarded, which makes the code harder to understand." effect="NEGATIVE">
       <target href="root.qm#_hCU1x-P0Ed6mXujsf-O9qQ"/>
     </influences>
     <influences xmi:id="_93ngEoXWEeCT8pJoQsn4HQ" justification="Modifiability is positively influenced, because more general types reduce the fan-out of source code changes.">
@@ -2130,7 +2132,7 @@
     <originatesFrom href="root.qm#_eEfjwQRpEeGawN0_s32iQQ"/>
     <measures xmi:id="_9xXHEIXWEeCT8pJoQsn4HQ" parent="_9xN9IIXWEeCT8pJoQsn4HQ"/>
   </measures>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_86NjcOHREd-Z2eCtn83" description="Number of classes." name="NC" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_86NjcOHREd-Z2eCtn83" description="Number of classes." name="#Classes" type="NUMBER"/>
   <measures xmi:id="_s1W3wPDPEd-dO4k3YfzrzA" description="&quot;This rule warns if a non-constant public static field is found. In a multi-threaded environment access to those fields must be synchronized. &quot; [1]" name="Non constant and static" type="FINDINGS">
     <originatesFrom href="root.qm#_uliZAQQNEeGSsdo78OGnBA"/>
     <measures xmi:id="_JtsyMJDYEeCBGcHpeUosJQ" parent="_9j89MIXWEeCT8pJoQsn4HQ"/>
@@ -2139,9 +2141,9 @@
     <originatesFrom href="root.qm#_uliZAQQNEeGSsdo78OGnBA"/>
     <measures xmi:id="_9nYrsIXWEeCT8pJoQsn4HQ" parent="_9PizcIXWEeCT8pJoQsn4HQ"/>
   </measures>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_nTyhAFqYEeC1KZOCQoCvzA" description="Number of methods." name="NOM" type="NUMBER"/>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_nTx6BVqYEeC1KZOCQoCvzA" description="Number of fields." name="NOF" type="NUMBER"/>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_nTzIG1qYEeC1KZOCQoCvzA" description="Number of variables." name="NOV" type="NUMBER"/>
-  <measures xsi:type="qm:NormalizationMeasure" xmi:id="_nTzIGVqYEeC1KZOCQoCvzA" description="Number of statements." name="NOS" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_nTyhAFqYEeC1KZOCQoCvzA" description="Number of methods." name="#Methods" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_nTx6BVqYEeC1KZOCQoCvzA" description="Number of fields." name="#Fields" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_nTzIG1qYEeC1KZOCQoCvzA" description="Number of variables." name="#Variables" type="NUMBER"/>
+  <measures normalizer="true" xmi:id="_nTzIGVqYEeC1KZOCQoCvzA" description="Number of statements." name="#Statements" type="NUMBER"/>
   <requires href="root.qm#_JarMoOHNEd-I9oS2OyT8ug"/>
 </qm:QualityModel>
